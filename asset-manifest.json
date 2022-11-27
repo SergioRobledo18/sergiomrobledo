@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/sergiomrobledo/static/css/main.616b11f7.css",
+    "main.js": "/sergiomrobledo/static/js/main.b8f64ae8.js",
+    "static/media/REUPoster.pdf": "/sergiomrobledo/static/media/REUPoster.dd7b014e68244a36b1e3.pdf",
+    "static/media/riceLogo.png": "/sergiomrobledo/static/media/riceLogo.405d201495aa06f284ea.png",
+    "static/media/HEBLogo.png": "/sergiomrobledo/static/media/HEBLogo.d179edd0a96cf2d4db7c.png",
+    "static/media/sergiorobledo.png": "/sergiomrobledo/static/media/sergiorobledo.88faa1f1bdfa9f31999f.png",
+    "static/media/resume.pdf": "/sergiomrobledo/static/media/resume.fa8685b87758c4010f40.pdf",
+    "static/media/hccLogo.png": "/sergiomrobledo/static/media/hccLogo.d876839e299522459c7a.png",
+    "index.html": "/sergiomrobledo/index.html",
+    "main.616b11f7.css.map": "/sergiomrobledo/static/css/main.616b11f7.css.map",
+    "main.b8f64ae8.js.map": "/sergiomrobledo/static/js/main.b8f64ae8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.616b11f7.css",
+    "static/js/main.b8f64ae8.js"
+  ]
+}
