@@ -1,0 +1,44 @@
+.footerBody {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footerGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.finalMessage {
+    font-size: 2rem;
+    color: var(--textColor);
+}
+
+.heartSVG {
+    display: inline-block;
+}
+
+.backToTopButton {
+    display: none;
+}
+
+.backToTopIcon {
+    width: 6rem;
+    height: 6rem;
+    stroke: var(--standOutColor);
+}
+
+@media only screen and (min-width: 600px) {
+    .backToTopIcon {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .backToTopButton {
+        display: contents;
+    }
+    .finalMessage {
+        font-size: 1rem;
+    }
+}

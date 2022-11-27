@@ -1,0 +1,57 @@
+.experienceBodySection {
+    width: 100%;
+    color: var(--standOutColor);
+    font-size: 2rem;
+}
+
+.experienceBodyTitle {
+    text-align: center;
+}
+
+.experienceContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experienceListContainer {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+@media only screen and (min-width: 600px) {
+    .experienceListContainer {
+        /* flex-direction: row; */
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .experienceListContainer {
+        width: 80%;
+    }
+}
+
+/* For desktop */
+@media only screen and (min-width: 1450px) {
+    .experienceListContainer {
+        width: 65%;
+    }
+}
+
+/* @media only screen and (min-width: 1800px) {
+     .experienceListContainer {
+        width: 65%;
+    } 
+} */
+
+@media only screen and (min-width: 2000px) {
+    .experienceListContainer {
+        width: 60%;
+    }
+}

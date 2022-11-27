@@ -1,0 +1,189 @@
+.heroContainer {
+    width: 100%;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    height: min-content;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroText {
+    width: 90%;
+    color: var(--textColor);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.heroText span {
+    color: var(--standOutColor);
+}
+
+.heroText p {
+    font-size: 2rem;
+}
+
+.heroLinks {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroLinks a {
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: solid 0.15rem var(--standOutColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroLinks svg {
+    stroke: var(--standOutColor);
+    fill: none;
+    width: 2rem;
+}
+
+#resumeLink:hover {
+    border-color: var(--headlineColor);
+    background-color: var(--headlineColor);
+}
+
+#resumeLink:hover svg {
+    stroke: #86888a;
+}
+
+#linkedinLink:hover {
+    border-color: #0077b5;
+    background-color: #0077b5;
+}
+
+#linkedinLink:hover svg {
+    stroke: #ffffff;
+    stroke-width: 0.1;
+    fill: #ffffff;
+}
+
+#githubLink:hover {
+    border-color: #6cc644;
+    background-color: #ffffff;
+}
+
+#githubLink:hover svg {
+    stroke: #6cc644;
+    fill: #6cc644;
+}
+
+.heroImage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imageContainer {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imageContainer img {
+    opacity: 0.85;
+}
+
+/* for tablets */
+@media only screen and (min-width: 600px) {
+    .heroContainer {
+        padding-top: 1rem;
+    }
+
+    .heroText p {
+        font-size: 1.5rem;
+    }
+
+    .heroLinks a {
+        width: 2rem;
+        height: 2rem;
+    }
+    .imageContainer {
+        width: 50%;
+    }
+}
+
+/* For smaller screen */
+@media only screen and (min-width: 992px) {
+    .heroContainer {
+        padding-top: 1rem;
+    }
+
+    .hero {
+        width: 80%;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .heroText {
+        width: 60%;
+        padding-top: 4rem;
+        text-align: start;
+    }
+
+    .heroLinks a {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .heroImage {
+        width: 40%;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+
+    .callToAction {
+        display: flex;
+        justify-content: center;
+    }
+
+    .heroLinks {
+        margin-top: -1rem;
+    }
+}
+
+/* for monitor*/
+@media only screen and (min-width: 1450px) {
+    .heroContainer {
+        padding-top: 1rem;
+    }
+
+    .hero {
+        width: 65%;
+    }
+    .imageContainer {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .heroContainer {
+        padding-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .hero {
+        width: 60%;
+    }
+}

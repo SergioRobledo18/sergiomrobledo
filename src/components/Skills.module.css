@@ -1,0 +1,60 @@
+.skillsSection {
+    width: 100%;
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+
+.skillsTitle {
+    text-align: center;
+}
+
+.skillsBody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillsDescription {
+    color: var(--textColor);
+    padding: 2rem;
+    text-align: center;
+}
+
+.skillsDescription span {
+    color: var(--standOutColor);
+}
+
+@media only screen and (min-width: 600px) {
+    .skillsSection {
+        font-size: 1.5rem;
+    }
+}
+
+/* For smaller screen */
+@media only screen and (min-width: 992px) {
+    .skillsDescription {
+        width: 75%;
+        padding: 0;
+    }
+    .skillsDescription {
+        text-align: start;
+    }
+}
+
+/* for monitor*/
+@media only screen and (min-width: 1450px) {
+    .skillsDescription {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+}
+
+@media only screen and (min-width: 2000px) {
+    .skillsDescription {
+        width: 60%;
+    }
+}

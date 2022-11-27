@@ -1,0 +1,139 @@
+.projectBody {
+    background-color: var(--secondaryBackgroundColor);
+    border: 1px solid #252736;
+    width: 100%;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    margin: 3rem 0rem;
+}
+
+.projectLocation {
+    margin: 0;
+    color: var(--textColor);
+    margin-bottom: 0.5rem;
+}
+
+.projectTitle {
+    margin: 0;
+}
+
+.projectIconContainer {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgroundColor);
+}
+
+.projectIcon {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--standOutColor);
+    stroke: var(--standOutColor);
+}
+
+.projectDescription {
+    color: var(--standOutColor);
+}
+
+.secondaryHeader {
+    font-size: 2.5rem;
+    margin: 1.5rem 0rem;
+    color: var(--headlineColor);
+    text-decoration: underline;
+    font-weight: 300;
+    text-align: center;
+}
+
+.toolAndHelpfulLinksContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.mainToolsContainer {
+    width: 100%;
+}
+
+.mainLinksContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.toolContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.tool {
+    width: 5rem;
+    height: 5rem;
+}
+
+.helpfulLinkGrid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+.helpfulLink {
+    margin: 1rem 0rem;
+}
+
+.helpfulLink:hover * {
+    color: var(--standOutColor);
+    stroke: var(--standOutColor);
+}
+
+.helpfulLink a {
+    width: 100%;
+    color: var(--headlineColor);
+    text-decoration: none;
+}
+
+.linkSVG {
+    stroke: var(--headlineColor);
+    width: 2rem;
+    height: 2rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .projectBody {
+        margin: 1rem;
+        width: 95%;
+    }
+
+    .toolContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .toolAndHelpfulLinksContainer {
+        justify-items: center;
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mainToolsContainer {
+        width: 100%;
+    }
+
+    .mainLinksContainer {
+        width: 100%;
+    }
+
+    .tool {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .secondaryHeader {
+        font-size: 1.8rem;
+    }
+}
+
+/* For smaller screen */

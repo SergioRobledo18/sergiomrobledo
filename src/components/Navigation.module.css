@@ -1,0 +1,253 @@
+.navbodycontainter {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+}
+.navbarbody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.navbarlogo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--headlineColor);
+}
+
+.navbarIcons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+
+.navbarIcons * {
+    margin: 0px 1rem;
+}
+
+.navbarIcons a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+.navbarIcons a:hover {
+    color: var(--standOutColor);
+}
+
+.lightModeButton {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: inherit;
+}
+
+.navbarLinks {
+    display: none;
+}
+
+/* .navbodycontainter {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarbody {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarlogo {
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--headlineColor);
+}
+
+.navbarIcons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0rem 0.5rem;
+}
+
+.navbarIcons * {
+    margin: 0px 1rem;
+}
+
+.navbarIcons a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--textColor);
+}
+
+.navbarIcons a:hover {
+    color: var(--standOutColor);
+}
+
+.lightModeButton {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: inherit;
+}
+*/
+#moonIcon,
+#sunIcon {
+    fill: var(--standOutColor);
+    stroke: var(--standOutColor);
+}
+
+#sunIcon:hover {
+    cursor: pointer;
+    animation: sunRotation 5s linear infinite;
+}
+
+@keyframes sunRotation {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#moonIcon:hover {
+    cursor: pointer;
+    animation: moonShake 2s linear infinite;
+}
+
+@keyframes moonShake {
+    0%,
+    100% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+}
+/*
+.bottomnavigationbody {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--secondaryBackgroundColor);
+    height: 10rem;
+    padding: 0rem 4rem;
+}
+
+.bottomNavPanel {
+    height: 100%;
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    background-color: palegoldenrod;
+}
+
+.navlogo svg {
+    width: 2.5rem;
+    stroke: var(--standOutColor);
+    background-color: blue;
+}
+.navlabel {
+    font-size: 1.5rem;
+    background-color: orange;
+} */
+
+.bottomnavigationbody {
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    bottom: 0rem;
+    background-color: var(--secondaryBackgroundColor);
+    height: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.navlogo {
+    width: 2.5rem;
+    stroke: var(--standOutColor);
+}
+.navlabel {
+    font-size: 1.5rem;
+    color: var(--standOutColor);
+    text-decoration: none;
+    font-weight: 400;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* For tables */
+@media only screen and (min-width: 600px) {
+    .navbarbody {
+        width: 95%;
+    }
+
+    .bottomnavigationbody {
+        height: 6rem;
+    }
+
+    .navlogo {
+        width: 1.7rem;
+    }
+
+    .navlabel {
+        font-size: 1rem;
+    }
+    .navbarlogo {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbarbody {
+        width: 85%;
+    }
+
+    .bottomnavigationbody {
+        display: none;
+    }
+
+    .navbarLinks {
+        display: contents;
+    }
+}
+
+/* For desktop */
+@media only screen and (min-width: 1450px) {
+    .navbarbody {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    .navbarbody {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .navbarbody {
+        width: 65%;
+    }
+}

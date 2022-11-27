@@ -1,0 +1,72 @@
+.slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+}
+
+.slider .slideTrack {
+    animation: scroll 10s linear infinite;
+    display: flex;
+    width: calc(10rem * 28);
+    height: 10rem;
+}
+
+.slider .slide {
+    width: 10rem;
+}
+
+.slider .carouselIcon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.slider .slideTrack:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-10rem * 14));
+    }
+}
+
+@keyframes hover {
+    0%,
+    100% {
+        transform: translateY(1rem);
+    }
+
+    50% {
+        transform: translateY(-2rem);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+/* For smaller screen */
+@media only screen and (min-width: 992px) {
+    .slider {
+        width: 75%;
+    }
+}
+
+/* for monitor*/
+@media only screen and (min-width: 1450px) {
+    .slider {
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+}
+
+@media only screen and (min-width: 2000px) {
+    .slider {
+        width: 60%;
+    }
+}

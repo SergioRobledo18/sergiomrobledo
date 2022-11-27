@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+html {
+    /* font-size: 16px; */
+    font-size: 8px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin-bottom: 10rem;
+    background: var(--backgroundColor);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.lightMode {
+    --backgroundColor: #e9eef2;
+    --secondaryBackgroundColor: #f2f4f5;
+    --headlineColor: #040615;
+    --standOutColor: #1b65a7;
+    --textColor: #6f7378;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.darkMode {
+    --backgroundColor: #111111; /* background */
+    --secondaryBackgroundColor: #2f2f2f; /* for sections that I want with a different background color */
+    --headlineColor: #f6f6f6; /* for headlines */
+    --standOutColor: #ffcb74; /* for buttons and icons */
+    --textColor: #b0acac; /* for text */
 }
 
-.App-link {
-  color: #61dafb;
+.app {
+    background-color: var(--backgroundColor);
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    color: var(--headlineColor);
+    margin: 0;
+    /* font-size: 4rem; */
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h2 {
+    color: var(--headlineColor);
+    margin: 0;
+    /* font-size: 1.8rem; */
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* For tables */
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    body {
+        margin-bottom: 6rem;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    html {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    html {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
 }
