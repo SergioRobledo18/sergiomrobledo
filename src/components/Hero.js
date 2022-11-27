@@ -8,9 +8,9 @@ const Hero = (props) => {
                 <div className={classes.hero}>
                     <div className={classes.heroText}>
                         <h1>Hello World!</h1>
-                        <h1>Im Sergio Robledo!</h1>
+                        <h1>I'm Sergio Robledo!</h1>
                         <p>
-                            Im a <span>Software Developer</span> and a
+                            I'm a <span>Software Developer</span> and a
                             <span> Data Analyst</span>
                         </p>
                         <p className={classes.bioParagraph}>
@@ -23,7 +23,7 @@ const Hero = (props) => {
                             free time you can find me reading, taking an online
                             course on a new technology or playing baseball.
                             Furthermore, I love building web apps, solving
-                            problems, and learning. Currently, Im growing and
+                            problems, and learning. Currently, I'm growing and
                             learning as a full time employee for Yokogawa
                             Corporation of America as a{" "}
                             <span>Programming Analyst. </span>
